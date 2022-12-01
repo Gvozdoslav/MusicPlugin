@@ -1,0 +1,25 @@
+<idea-plugin>
+    <id>org.example.MusicPlugin</id>
+    <name>MusicPlugin</name>
+    <vendor email="remrostrus2123@yandex.ru" url="https://vk.com/etozhemoyastranicza">MusicPlugin</vendor>
+
+    <description><![CDATA[
+    Plugin for listen to the music and enjoy your life
+]]></description>
+
+    <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="MusicPlugin" class="MusicPlugin" text="Music Plugin"
+                description="Plugin for listen to music and enjoy your life">
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl COMMA"/>
+        </action>
+    </actions>
+</idea-plugin>
